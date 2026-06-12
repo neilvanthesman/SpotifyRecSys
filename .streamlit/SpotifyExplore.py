@@ -212,26 +212,28 @@ with left_settings:
     )
 
 
-    selected_features = st.multiselect(
-        "Select audio features used for similarity",
-        options=[
-            "danceability",
-            "liveness",
-            "valence",
-            "energy",
-            "instrumentalness",
-            "acousticness",
-            "loudness",
-            "tempo"
-        ],
-        default=[
-            "danceability",
-            "energy",
-            "valence",
-            "acousticness",
-            "instrumentalness"
-        ]
+    selected_features = st.pills(
+    "Select audio features used for similarity",
+    options=[
+    "danceability",
+    "liveness",
+    "valence",
+    "energy",
+    "instrumentalness",
+    "acousticness",
+    "loudness",
+    "tempo"
+    ],
+    selection_mode="multi",
+    default=[
+    "danceability",
+    "energy",
+    "valence",
+    "acousticness",
+    "instrumentalness"
+    ]
     )
+
 
     if len(selected_features) == 0:
         st.warning("Please select at least one audio feature.")
