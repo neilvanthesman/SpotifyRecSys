@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 hide_default_format = """
        <style>
        #MainMenu {visibility: hidden; }
