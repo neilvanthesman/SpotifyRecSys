@@ -27,12 +27,12 @@ st.set_page_config(
 st.title("✧ Spotify Explore")
 st.caption("Discover songs through audio similarity")
 
-with st.expander("(ℹ) How is this different from Spotify?"):
+with st.expander("(i) How is this different from Spotify?"):
 
     st.markdown("""
 Spotify's recommendation engine uses listening history, popularity, collaborative filtering, and many proprietary factors.
 This project recommends songs solely by technical similarity without gathering your personal information.
-[Find out how it works on GitHub](https://github.com/neilvanthesman/Machine-Learning/blob/main/README.md)
+[Find out how it works](https://github.com/neilvanthesman/Machine-Learning/blob/main/README.md)
 """)
 # -------------------------------------------------
 # Session State
@@ -373,5 +373,5 @@ if recommendations is not None:
 st.divider()
 
 st.caption(
-    "Spotify Explore - Build with Python & Streamlit"
+    "Spotify Explore 2026 - Built with Python & Streamlit"
 )
