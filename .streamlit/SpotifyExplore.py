@@ -269,18 +269,14 @@ audio_matrix = scaler.fit_transform(
 # -------------------------------------------------
 # Recommend Button
 # -------------------------------------------------
-if st.button("Recommend Songs"):
+left, center, right = st.columns([1,1,1])
 
-    query = f"{artist} <> {song}"
-
-    st.session_state.query_song = query
-
-    with st.spinner("Finding similar songs..."):
-
-        st.session_state.recommendations = get_recommendations(
-            query,
-            top_n
-        )
+with center:
+    recommend_clicked = st.button(
+        "Recommend Songs",
+        type="primary",
+        use_container_width=True
+    )
 
 
 # -------------------------------------------------
