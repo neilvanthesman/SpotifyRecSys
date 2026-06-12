@@ -1,6 +1,6 @@
 [theme] # You have to add this line
 base="light"
-primaryColor = '#cbed65' # purp
+primaryColor = '#400073' # purp
 linkColor="#fed1d6"#pink
 backgroundColor = "#0E1117"
 textColor = "#cbed65"
