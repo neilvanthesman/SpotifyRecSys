@@ -264,7 +264,7 @@ audio_matrix = scaler.fit_transform(
 # -------------------------------------------------
 # Recommend Button
 # -------------------------------------------------
-left, center, right = st.columns([1,1,1])
+left, center, right = st.columns([3,1,3])
 
 with center:
     recommend_clicked = st.button(
@@ -287,7 +287,7 @@ if (
     )
 if recommendations is not None:
 
-    left_col, right_col = st.columns([2, 1.3])
+    left_col, right_col = st.columns([2, 1])
 
     with left_col:
 
