@@ -29,7 +29,7 @@ st.caption("Discover songs through audio similarity")
 with st.expander("(i) How is this different from Spotify?"):
 
     st.markdown("""
-Spotify's recommendation engine uses listening history, popularity, collaborative filtering, and many proprietary factors.
+Spotify's recommendation engine uses listening history, track genre, similar artists, and other factors.
 
 This project recommends songs solely by technical similarity without gathering your personal information.
 [Find out how it works](https://github.com/neilvanthesman/Machine-Learning/blob/main/README.md)
