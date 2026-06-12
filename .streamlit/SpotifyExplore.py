@@ -186,20 +186,20 @@ col1, col2 = st.columns(2)
 with col1:
     artist = st.text_input(
         "Artist",
-        placeholder="Coldplay"
+        placeholder="Clairo"
     )
 
 with col2:
     song = st.text_input(
         "Song Title",
-        placeholder="Yellow"
+        placeholder="Bags"
     )
 
 
 # -------------------------------------------------
 # Settings
 # -------------------------------------------------
-left_settings, right_settings = st.columns([1, 1])
+left_settings, right_settings = st.columns([2, 1.5])
 
 with left_settings:
 
@@ -234,10 +234,10 @@ with left_settings:
     ]
     )
 
-
-    if len(selected_features) == 0:
-        st.warning("Please select at least one audio feature.")
-        st.stop()
+    if len(selected_features) == 0: 
+        st.warning("Please select at least one audio feature.") st.stop() 
+    if len(selected_features) < 3: 
+        st.warning( "Using fewer than 3 features may produce less reliable recommendations." )
 
 with right_settings:
 
@@ -264,7 +264,7 @@ audio_matrix = scaler.fit_transform(
 # -------------------------------------------------
 # Recommend Button
 # -------------------------------------------------
-left, center, right = st.columns([3,1,3])
+left, center, right = st.columns([3,0.8,3])
 
 with center:
     recommend_clicked = st.button(
