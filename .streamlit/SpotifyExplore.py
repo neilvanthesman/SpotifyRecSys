@@ -273,7 +273,7 @@ left_space, center_button, right_space = st.columns([4, 1, 4])
 with center_button:
 
     if st.button(
-        "recommend ✧-songs-✧",
+        "recommend⠀✧⠀songs⠀✧",
         use_container_width=True,
         type = "secondary"
     ):
