@@ -1,5 +1,7 @@
-[theme]
-primaryColor = "#1DB954"
-backgroundColor = "#0E1117"
-secondaryBackgroundColor = "#262730"
-textColor = "#FAFAFA"
+[theme] # You have to add this line
+
+primaryColor = '#FF8C02' # Bright Orange
+
+backgroundColor = '#00325B' # Dark Blue
+
+secondaryBackgroundColor = '#55B2FF' # Lighter Blue
