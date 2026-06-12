@@ -13,13 +13,7 @@ import gspread
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics.pairwise import cosine_similarity
 from google.oauth2.service_account import Credentials
-hide_default_format = """
-       <style>
-       MainMenu {visibility: hidden; }
-       footer {visibility: hidden;}
-       </style>
-       """
-st.markdown(hide_default_format, unsafe_allow_html=True)
+
 # -------------------------------------------------
 # Page Config
 # -------------------------------------------------
