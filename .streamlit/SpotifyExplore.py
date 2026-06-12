@@ -229,7 +229,8 @@ with left_settings:
     "valence",
     "acousticness",
     "instrumentalness"
-    ]
+    ],
+         label_visibility="collapsed"
     )
 
 
