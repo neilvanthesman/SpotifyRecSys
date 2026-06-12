@@ -1,7 +1,7 @@
 [theme] # You have to add this line
 
-primaryColor = '#400073' # purp
+primaryColor = '#cbed65' # purp
 linkColor="#fed1d6"#pink
 backgroundColor = "#0E1117"
 textColor = "#cbed65"
-secondaryBackgroundColor = '' # Lighter Blue
+secondaryBackgroundColor = '#400073' 
