@@ -1,6 +1,6 @@
 [theme] # You have to add this line
 
 primaryColor = '#FF8C02' # Bright Orange
-
-
+backgroundColor = "#0E1117"
+textColor = "#FAFAFA"
 secondaryBackgroundColor = '#55B2FF' # Lighter Blue
