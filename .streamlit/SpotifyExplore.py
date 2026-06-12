@@ -96,8 +96,7 @@ def load_data():
         "energy",
         "instrumentalness",
         "acousticness",
-        "loudness",
-        "tempo"
+        "loudness"
     ]
 
     data[all_features] = data[all_features].fillna(0)
@@ -207,7 +206,7 @@ with left_settings:
 
     st.markdown(
         "Recommended: choose at least 3 features. " 
-        "Loudness and Tempo are experimental and generally not recommended.\n"
+        "Loudness is an experimental feature - recommended.\n"
         "[Learn more about Audio Features](https://developer.spotify.com/documentation/web-api/reference/get-audio-features)"
     )
 
@@ -221,8 +220,7 @@ with left_settings:
     "energy",
     "instrumentalness",
     "acousticness",
-    "loudness",
-    "tempo"
+    "loudness"
     ],
     selection_mode="multi",
     default=[
