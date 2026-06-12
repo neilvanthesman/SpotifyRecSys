@@ -1,6 +1,7 @@
 [theme] # You have to add this line
 
-primaryColor = '#400073' # Bright Orange
+primaryColor = '#400073' # purp
+linkColor="#fed1d6"#pink
 backgroundColor = "#0E1117"
 textColor = "#cbed65"
-secondaryBackgroundColor = '#400073' # Lighter Blue
+secondaryBackgroundColor = '' # Lighter Blue
