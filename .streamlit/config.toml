@@ -1,6 +1,6 @@
 [theme] # You have to add this line
 base="light"
-primaryColor = '##' 
+primaryColor = '9B1FFF' #LIGHTER PURP
 linkColor="#fed1d6"#pink
 backgroundColor = "#0E1117"
 textColor = "#cbed65"
