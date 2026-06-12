@@ -234,10 +234,14 @@ with left_settings:
     ]
     )
 
-    if len(selected_features) == 0: 
-        st.warning("Please select at least one audio feature.") st.stop() 
+
+    if len(selected_features) == 0:
+    st.warning("Please select at least one audio feature.")
+    st.stop()
     if len(selected_features) < 3: 
-        st.warning( "Using fewer than 3 features may produce less reliable recommendations." )
+        st.warning(
+            "Using fewer than 3 features may produce less reliable recommendations." 
+        )
 
 with right_settings:
 
