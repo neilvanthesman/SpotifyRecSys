@@ -206,7 +206,7 @@ with left_settings:
 
     st.markdown(
         "Recommended: choose at least 3 features. " 
-        "Loudness is an experimental feature - recommended.\n"
+        "Loudness is an experimental feature - not recommended.\n"
         "[Learn more about Audio Features](https://developer.spotify.com/documentation/web-api/reference/get-audio-features)"
     )
 
