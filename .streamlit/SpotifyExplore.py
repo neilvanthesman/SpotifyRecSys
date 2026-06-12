@@ -274,7 +274,8 @@ with center_button:
 
     if st.button(
         "Recommend Songs",
-        use_container_width=True
+        use_container_width=True,
+        type = "primary
     ):
 
         query = f"{artist} <> {song}"
