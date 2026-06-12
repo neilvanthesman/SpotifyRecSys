@@ -185,13 +185,13 @@ col1, col2 = st.columns(2)
 with col1:
     artist = st.text_input(
         "Artist",
-        placeholder="Coldplay"
+        placeholder="Clairo"
     )
 
 with col2:
     song = st.text_input(
         "Song Title",
-        placeholder="Yellow"
+        placeholder="Bags"
     )
 
 
@@ -268,19 +268,25 @@ audio_matrix = scaler.fit_transform(
 # -------------------------------------------------
 # Recommend Button
 # -------------------------------------------------
-if st.button("Recommend Songs"):
+left_space, center_button, right_space = st.columns([1, 1, 1])
 
-    query = f"{artist} <> {song}"
+with center_button:
 
-    st.session_state.query_song = query
+    if st.button(
+        "Recommend Songs",
+ #       use_container_width=True
+    ):
 
-    with st.spinner("Finding similar songs..."):
+        query = f"{artist} <> {song}"
 
-        st.session_state.recommendations = get_recommendations(
-            query,
-            top_n
-        )
+        st.session_state.query_song = query
 
+        with st.spinner("Finding similar songs..."):
+
+            st.session_state.recommendations = get_recommendations(
+                query,
+                top_n
+            )
 
 # -------------------------------------------------
 # Display Recommendations
