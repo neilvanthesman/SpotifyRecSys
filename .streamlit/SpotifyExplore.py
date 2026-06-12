@@ -205,7 +205,7 @@ with left_settings:
 
     st.subheader("Audio Features")
 
-    st.info(
+    st.badge(
         "Recommended: choose at least 3 features. " 
         "Loudness and Tempo are experimental and generally not recommended.\n"
         "[Learn more about Audio Features](https://developer.spotify.com/documentation/web-api/reference/get-audio-features)"
