@@ -239,11 +239,6 @@ with left_settings:
         st.warning("Please select at least one audio feature.")
         st.stop()
 
-    if len(selected_features) < 3:
-        st.warning(
-            "Using fewer than 3 features may produce less reliable recommendations."
-        )
-
 with right_settings:
 
     st.subheader("Settings")
@@ -292,7 +287,7 @@ if (
     )
 if recommendations is not None:
 
-    left_col, right_col = st.columns([2, 1.5])
+    left_col, right_col = st.columns([2, 1.3])
 
     with left_col:
 
