@@ -205,14 +205,13 @@ with left_settings:
     st.subheader("Audio Features")
 
     st.markdown(
-        "Recommended: choose at least 3 features. " 
-        "Loudness is an experimental feature - recommended.\n"
+        "Recommended: Select at least 3 features. " 
+        "Loudness is an experimental feature - not recommended.\n"
         "[Learn more about Audio Features](https://developer.spotify.com/documentation/web-api/reference/get-audio-features)"
     )
 
 
     selected_features = st.pills(
-    "Select audio features used for similarity",
     options=[
     "danceability",
     "liveness",
